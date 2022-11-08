@@ -70,7 +70,7 @@ class Home extends React.Component<any,IIndexState> {
 			<div className="Home" id="Home">
 				<header>
 					<span className="logo">
-						<img src="t.png" alt="" style={{width: 28,height:28}}/>
+						<img src="tlogo.png" alt="" style={{height:30}}/>
 					</span>
 					<Dropdown overlay={menu}>
 						<span>

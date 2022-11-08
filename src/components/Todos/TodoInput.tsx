@@ -40,15 +40,15 @@ class TodoInput extends React.Component<ITodoInputProps,ITodoInputState> {
 		const { description } = this.state;
 		const suffix = description ? <Icon type="enter" onClick={this.postTodo}/> : <span/>;
 		return (
-      <div className="TodoInput" id="TodoInput">
-	      <Input
-		      placeholder="添加新任务"
-		      suffix={suffix}
-		      value={description}
-		      onChange={(e) => this.setState({description: e.target.value})}
-		      onKeyUp={this.onKeyUp}
-	      />
-      </div>
+			<div className="TodoInput" id="TodoInput">
+				<Input
+					placeholder="添加新任务"
+					suffix={suffix}
+					value={description}
+					onChange={(e) => this.setState({description: e.target.value})}
+					onKeyUp={this.onKeyUp}
+				/>
+			</div>
 		);
 	}
 }
